@@ -60,7 +60,10 @@ const run = async () => {
         "Citizen Party of Dumnon",
         "Worker's Frontier Coalition",
         "Workers of Quillaente Union Party",
-        "Citizen Party of Grabil"
+        "Citizen Party of Grabil",
+        "Citizen Party of Chireni",
+        "Union Party of Bungk",
+        "United Fintamkina Left Party"
     ]
     const control = await Promise.all(map(fName => getControllingSystemsData(fName))(factions))
     return filter(x => x.count > 0)(control)
@@ -92,7 +95,10 @@ const colors = [
 "f45ac6",
 "bc3014",
 "af1c2f",
-"0e9e10"
+"0e9e10",
+"e207ce",
+"0891a9",
+"91bef7"
 ]
 
 const galmapJson = (facData) => {
